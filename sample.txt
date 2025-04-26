@@ -1,0 +1,60 @@
+/images
+  /jpeg
+    image_1.jpg
+    image_2.jpg
+    image_3.jpg
+    image_4.jpg
+    image_5.jpg
+	image_6.jpg
+    image_7.jpg
+    image_8.jpg
+	
+    dude1.jpg
+    dude2.jpg
+    dude3.jpg
+    dude4.jpg
+
+  /png
+    image_1.png
+    image_2.png
+    image_3.png
+    image_4.png
+    image_5.png
+	image_6.png
+    image_7.png
+    image_8.png
+	
+    dude1.png
+    dude2.png
+    dude3.png
+    dude4.png
+	
+  /avif
+    image_1.avif
+    image_2.avif
+    image_3.avif
+    image_4.avif
+    image_5.avif
+	image_6.avif
+    image_7.avif
+    image_8.avif
+	
+    dude1.avif
+    dude2.avif
+    dude3.avif
+    dude4.avif
+
+  /webp
+    image_1.webp
+    image_2.webp
+    image_3.webp
+    image_4.webp
+    image_5.webp
+	image_6.webp
+    image_7.webp
+    image_8.webp
+	
+    dude1.webp
+    dude2.webp
+    dude3.webp
+    dude4.webp
