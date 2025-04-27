@@ -5,7 +5,7 @@
     image_3.jpg
     image_4.jpg
     image_5.jpg
-	image_6.jpg
+    image_6.jpg
     image_7.jpg
     image_8.jpg
 	
@@ -20,7 +20,7 @@
     image_3.png
     image_4.png
     image_5.png
-	image_6.png
+    image_6.png
     image_7.png
     image_8.png
 	
@@ -35,7 +35,7 @@
     image_3.avif
     image_4.avif
     image_5.avif
-	image_6.avif
+    image_6.avif
     image_7.avif
     image_8.avif
 	
@@ -50,7 +50,7 @@
     image_3.webp
     image_4.webp
     image_5.webp
-	image_6.webp
+    image_6.webp
     image_7.webp
     image_8.webp
 	
