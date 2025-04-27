@@ -1,0 +1,44 @@
+
+
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-family: "Courier New";
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.format-label {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .nav-link {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .image-box img {
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .format-label {
+  color: #f1f1f1;
+}
