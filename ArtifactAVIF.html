@@ -14,6 +14,14 @@
 </head>
 
 <body>
+  <div>
+    <ul>
+      <button class="perfTest10" onclick="PerformanceCheck(10);">Perf10</button>
+      <button class="perfTest25" onclick="PerformanceCheck(25);">Perf25</button>
+      <button class="perfTest50" onclick="PerformanceCheck(50);">Perf50</button>
+      <button class="downloadPerf" onclick="Download();">Download</button>
+    </ul>
+  </div>
 
   <!-- Navbar with Dark Mode Toggle -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
@@ -117,6 +125,7 @@
 
 <!-- Dark Mode Toggle Script -->
 <script>
+  var typeName = "AVIF";
   const toggle = document.getElementById('darkModeToggle');
   const body = document.body;
 
@@ -136,5 +145,6 @@
     }
   });
 </script>
+<script src="DataCollection/CollectData.js"></script>
 
 </html>
