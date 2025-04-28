@@ -8,17 +8,16 @@ function Init(){
         return;
     }
 
-    console.log( "Loading started" );
+    console.log(`Fetch ${perfTimes} started`);
     performance.mark(fetchStart);
-
     window.onload = incrementPerfTest;
 }
-
 
 function incrementPerfTest() {
     performance.mark(fetchDone);
     var measure = performance.measure(fetchDuration, fetchStart, fetchDone);
     var perfTimes = parseInt(localStorage.getItem("PerfTimes"));
+    console.log(`Fetch ${perfTimes} done`);
     perfTimes = perfTimes - 1;
     localStorage.setItem("PerfTimes", perfTimes);
 
@@ -28,13 +27,9 @@ function incrementPerfTest() {
     perfResult += `\n${duration}`;
     localStorage.setItem("PerfResult", perfResult);
 
-    console.log(`Fetch ${perfTimes} duration: ${duration}s`);
 
     if(perfTimes < 1){
-        // Create button to run performance check.
-        // setupPerfButton();
-        // Create button to download perf results.
-        // setupDownloadButton();
+            console.log("Performance check done!");
         return;
     }
     location.reload();
@@ -67,7 +62,6 @@ function setupDownloadButton(){
 function Download(){
   var perfResult = localStorage.getItem("PerfResult");
   var totalTimes = localStorage.getItem("TotalTimes");
-  localStorage.setItem("PerfResult", "");
   download(perfResult, `PerformanceTest_${typeName}_${totalTimes}.csv`, "string");
 }
 
