@@ -10,10 +10,10 @@ function Init(){
 
     console.log(`Fetch ${perfTimes} started`);
     performance.mark(fetchStart);
-    window.onload = incrementPerfTest;
+    window.onload = iteratePerformanceTest;
 }
 
-function incrementPerfTest() {
+function iteratePerformanceTest() {
     performance.mark(fetchDone);
     var measure = performance.measure(fetchDuration, fetchStart, fetchDone);
     var perfTimes = parseInt(localStorage.getItem("PerfTimes"));
@@ -27,36 +27,11 @@ function incrementPerfTest() {
     perfResult += `\n${duration}`;
     localStorage.setItem("PerfResult", perfResult);
 
-
     if(perfTimes < 1){
             console.log("Performance check done!");
         return;
     }
     location.reload();
-}
-
-
-
-function setupPerfButton(){
-    var perfButton = document.createElement ('button');
-    perfButton.innerHTML = '<button id="perfButton" type="button">'
-            + 'Performance x 10</button>'
-            ;
-    document.body.appendChild (perfButton);
-    perfButton.addEventListener("click", PerformanceCheck(10));
-}
-
-function setupDownloadButton(){
-    var perfResult = localStorage.getItem("PerfResult");
-    var resultsText = document.createElement ('div');
-    resultsText.innerHTML = `<p>${perfResult}</p>`;
-
-    var downloadButton = document.createElement ('div');
-    downloadButton.innerHTML = '<button id="perfButton" type="button">'
-            + 'Download</button>'
-            ;
-    document.body.appendChild (downloadButton);
-    document.body.appendChild (resultsText);
 }
 
 function Download(){
@@ -83,6 +58,7 @@ function download(data, filename, type) {
         }, 0);
     }
 }
+
 function PerformanceCheck(times){
     console.log(`Start performance test ${times}`);
     localStorage.setItem("PerfTimes", times);

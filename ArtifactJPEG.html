@@ -11,17 +11,18 @@
   <link rel="stylesheet" href="Shared/Style.css">
 
   <title>JPEG Performance</title>
+  <script src="DataCollection/CollectData.js"></script>
 </head>
 
 <body>
-<div>
-  <ul>
-    <button class="perfTest10" onclick="PerformanceCheck(10);">Perf10</button>
-    <button class="perfTest25" onclick="PerformanceCheck(25);">Perf25</button>
-    <button class="perfTest50" onclick="PerformanceCheck(50);">Perf50</button>
-    <button class="downloadPerf" onclick="Download();">Download</button>
-  </ul>
-</div>
+  <div>
+    <ul>
+      <button class="perfTest25" onclick="PerformanceCheck(25);">Perf25</button>
+      <button class="perfTest50" onclick="PerformanceCheck(50);">Perf50</button>
+	  <button class="perfTest100" onclick="PerformanceCheck(100);">Perf100</button>
+      <button class="downloadPerf" onclick="Download();">Download</button>
+    </ul>
+  </div>
 
   <!-- Navbar with Dark Mode Toggle -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
@@ -66,10 +67,10 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-md-3 image-box"><img src="JPEG/image_5.jpg" alt="JPEG 5"><div class="format-label">JPEG 5</div></div>
-          <div class="col-md-3 image-box"><img src="JPEG/image_6.jpg" alt="JPEG 6"><div class="format-label">JPEG 6</div></div>
-          <div class="col-md-3 image-box"><img src="JPEG/image_7.jpg" alt="JPEG 7"><div class="format-label">JPEG 7</div></div>
-          <div class="col-md-3 image-box"><img src="JPEG/image_8.jpg" alt="JPEG 8"><div class="format-label">JPEG 8</div></div>
+          <div class="col-md-3 image-box"><img src="JPEG/image_5_small.jpg" alt="JPEG 5"><div class="format-label">JPEG 5</div></div>
+          <div class="col-md-3 image-box"><img src="JPEG/image_6_small.jpg" alt="JPEG 6"><div class="format-label">JPEG 6</div></div>
+          <div class="col-md-3 image-box"><img src="JPEG/image_7_small.jpg" alt="JPEG 7"><div class="format-label">JPEG 7</div></div>
+          <div class="col-md-3 image-box"><img src="JPEG/image_8_small.jpg" alt="JPEG 8"><div class="format-label">JPEG 8</div></div>
         </div>
 
         <div class="row g-4">
@@ -145,6 +146,5 @@
     }
   });
 </script>
-<script src="DataCollection/CollectData.js"></script>
 
 </html>

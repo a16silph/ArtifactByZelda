@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="Shared/Style.css">
 
   <title>PNG Performance</title>
+  <script src="DataCollection/CollectData.js"></script>
 </head>
 
 <body>
   <div>
     <ul>
-      <button class="perfTest10" onclick="PerformanceCheck(10);">Perf10</button>
       <button class="perfTest25" onclick="PerformanceCheck(25);">Perf25</button>
       <button class="perfTest50" onclick="PerformanceCheck(50);">Perf50</button>
+	  <button class="perfTest100" onclick="PerformanceCheck(100);">Perf100</button>
       <button class="downloadPerf" onclick="Download();">Download</button>
     </ul>
   </div>
@@ -66,10 +67,10 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-md-3 image-box"><img src="PNG/image_5.png" alt="PNG 5"><div class="format-label">PNG 5</div></div>
-          <div class="col-md-3 image-box"><img src="PNG/image_6.png" alt="PNG 6"><div class="format-label">PNG 6</div></div>
-          <div class="col-md-3 image-box"><img src="PNG/image_7.png" alt="PNG 7"><div class="format-label">PNG 7</div></div>
-          <div class="col-md-3 image-box"><img src="PNG/image_8.png" alt="PNG 8"><div class="format-label">PNG 8</div></div>
+          <div class="col-md-3 image-box"><img src="PNG/image_5_small.png" alt="PNG 5"><div class="format-label">PNG 5</div></div>
+          <div class="col-md-3 image-box"><img src="PNG/image_6_small.png" alt="PNG 6"><div class="format-label">PNG 6</div></div>
+          <div class="col-md-3 image-box"><img src="PNG/image_7_small.png" alt="PNG 7"><div class="format-label">PNG 7</div></div>
+          <div class="col-md-3 image-box"><img src="PNG/image_8_small.png" alt="PNG 8"><div class="format-label">PNG 8</div></div>
         </div>
 
         <div class="row g-4">
@@ -145,6 +146,5 @@
     }
   });
 </script>
-<script src="DataCollection/CollectData.js"></script>
 
 </html>

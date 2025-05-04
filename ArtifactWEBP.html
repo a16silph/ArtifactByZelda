@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="Shared/Style.css">
 
   <title>WebP Performance</title>
+  <script src="DataCollection/CollectData.js"></script>
 </head>
 
 <body>
   <div>
     <ul>
-      <button class="perfTest10" onclick="PerformanceCheck(10);">Perf10</button>
       <button class="perfTest25" onclick="PerformanceCheck(25);">Perf25</button>
       <button class="perfTest50" onclick="PerformanceCheck(50);">Perf50</button>
+	  <button class="perfTest100" onclick="PerformanceCheck(100);">Perf100</button>
       <button class="downloadPerf" onclick="Download();">Download</button>
     </ul>
   </div>
@@ -66,10 +67,10 @@
         </div>
 
         <div class="row g-4">
-          <div class="col-md-3 image-box"><img src="WEBP/image_5.webp" alt="WebP 5"><div class="format-label">WebP 5</div></div>
-          <div class="col-md-3 image-box"><img src="WEBP/image_6.webp" alt="WebP 6"><div class="format-label">WebP 6</div></div>
-          <div class="col-md-3 image-box"><img src="WEBP/image_7.webp" alt="WebP 7"><div class="format-label">WebP 7</div></div>
-          <div class="col-md-3 image-box"><img src="WEBP/image_8.webp" alt="WebP 8"><div class="format-label">WebP 8</div></div>
+          <div class="col-md-3 image-box"><img src="WEBP/image_5_small.webp" alt="WebP 5"><div class="format-label">WebP 5</div></div>
+          <div class="col-md-3 image-box"><img src="WEBP/image_6_small.webp" alt="WebP 6"><div class="format-label">WebP 6</div></div>
+          <div class="col-md-3 image-box"><img src="WEBP/image_7_small.webp" alt="WebP 7"><div class="format-label">WebP 7</div></div>
+          <div class="col-md-3 image-box"><img src="WEBP/image_8_small.webp" alt="WebP 8"><div class="format-label">WebP 8</div></div>
         </div>
 
         <div class="row g-4">
@@ -145,6 +146,5 @@
     }
   });
 </script>
-<script src="DataCollection/CollectData.js"></script>
 
 </html>
